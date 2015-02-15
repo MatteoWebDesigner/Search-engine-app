@@ -8,27 +8,28 @@
 
 <div id="body">
     <div class="container">
-    	<form class="search">
-    		<input type="text" ng-model="query">
+    	<form name="formSearch" class="form-search">
+    		<input type="text" autofocus ng-model="query">
     		<button type="submit" ng-click="search()">Import.io Search</button>
     	</form>
 
         <ul class="result">
+            <li class="length-result" ng-if="lengthResults > 0">
+                About {{lengthResults}} results
+            </li>
             <li ng-repeat="product in Products">
-                <h2>{{product.data.prodname_text}}</h2>
-                <p>{{product.data.description}}</p>
-                <p>price: {{ product.data['prodprice_price/_source']}}</p> <!-- | currecy:product.data['prodprice_price/_currency'] -->
-                <a href="{{product.data.link_1/_source}}">{{ product.data['link_1/_source'] }}</a>
-                <img ng-src="{{product.data.prodimg_image}}" alt="{{product.data['prodimg_image/_alt']}}">
+                <div class="col">
+                    <h2><a href="{{product.data.link_1}}" target="_blank">{{product.data.prodname_text}}</a></h2>
+                    <p class="link">{{ product.data.link_1 }}</p>
+                    <p class="price">price: {{ product.data['prodprice_price/_source'] }}</p>
+                    <p>{{product.data.text_1}}</p>
+                </div>
+                <div class="col">
+                    <img ng-src="{{product.data.prodimg_image}}" alt="{{product.data['prodimg_image/_alt']}}">
+                </div>
             </li>
-            <li ng-if="Products.length == 0">No result</li>
-            <li>
-                <h2>ciao</h2>
-                <p>sgdsgsdg</p>
-                <p>price: 0000</p> <!-- | currecy:product.data['prodprice_price/_currency'] -->
-                <a href="{{product.data.link_1/_source}}">link</a>
-                <img ng-src="{{product.data.prodimg_image}}" alt="{{product.data['prodimg_image/_alt']}}">
-            </li>
+            <li class="no-result" ng-if="numberSearchDone > 0 && !loading && lengthResults == 0">No result</li>
+            <li class="loading" ng-if="loading"></li>
         </ul>
     </div>
 </div>

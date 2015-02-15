@@ -1,6 +1,7 @@
-:Timeline:
+Timeline:
 00.50h - creating repo, Scafoldig and configuration
 00.40h - preparing structure app, cleaning app, added some html and some css.
 01.15h - import.io reading doc and setting import.io and now I am displaying some data
-
-14.40/
+01.20h - testing and experimenting the import.io API
+02.20h - styling list result and adding some features.
+19:00/00:00 - write test 

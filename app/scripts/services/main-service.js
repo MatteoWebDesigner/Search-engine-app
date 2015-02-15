@@ -24,6 +24,7 @@ angular
 			    	deferred.resolve(data);
 			    },
 			    "error": function (error) {
+			    	$log.debug(error);
 					deferred.reject(error);
 			    }
 			});

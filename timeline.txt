@@ -1,3 +1,6 @@
-Timeline:
-19:10/20:00 - creating repo, Scafoldig and configuration
-22:20/23:00 - preparing structure app, cleaning app, added some html and some css.
+:Timeline:
+00.50h - creating repo, Scafoldig and configuration
+00.40h - preparing structure app, cleaning app, added some html and some css.
+01.15h - import.io reading doc and setting import.io and now I am displaying some data
+
+14.40/

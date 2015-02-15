@@ -30,7 +30,7 @@ angular
 						$scope.numberSearchDone++;
 					}, 
 					function (error) {
-						$scope.lengthResults = data.length;
+						$scope.lengthResults = error.length;
 						$scope.Products = error;
 						$scope.loading = false;
 						$scope.numberSearchDone++;

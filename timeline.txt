@@ -1,0 +1,3 @@
+Timeline:
+19:10/20:00 - creating repo, Scafoldig and configuration
+22:20/23:00 - preparing structure app, cleaning app, added some html and some css.

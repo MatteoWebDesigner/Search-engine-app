@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Mobile Styles */
+/* @media (max-width: 767px) */
+
+/* General elements */
+:focus {
+	outline: none;
+}
+
+/* General classes */
+
+/* Sections */
+ #header {
+	text-align: center;
+}
+
+ #header .google {
+	font: 8em 'Noto Serif', serif;
+	margin-bottom: 55px;
+}
+	 #header .google span:nth-child(3n+1) {
+		color: rgb(64, 105, 174); /* blue */
+	}
+	 #header .google span:nth-child(4n+2) {
+		color: rgb(222, 109, 93); /* red */
+	}
+	 #header .google span:nth-child(5n+3) {
+		color: rgb(250, 179, 49); /* yellow */
+	}
+	 #header .google span:nth-child(5n+5) {
+		color: rgb(20, 149, 85); /* green */
+	}
+
+#body {}
+	#body form {
+		text-align: center;
+	}
+	#body form .search {
+		width: 541px;
+		padding: 5px 10px;
+		border: 1px solid rgb(216, 216, 216);
+		margin-bottom: 20px;
+	}
+	#body form .search:hover {
+		border-color: rgb(178, 178, 178);
+	}
+		
+	#body form .search:focus {
+		border-color: rgb(66, 133, 244);
+	}
+
+	#body form button {
+		padding: 5px 10px;
+		border: 1px solid #dcdcdc;
+		border-color: rgba(0,0,0,0.1);
+		color: #444;
+		background: #f5f5f5;
+		background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+		background: linear-gradient(top,#f5f5f5,#f1f1f1);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f5f5f5,endColorstr=#f1f1f1,GradientType=1);
+	}
+	#body form button:hover {
+		border-color: #c6c6c6;
+		color: #222;
+		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+		box-shadow: 0 1px 0 rgba(0,0,0,.15);
+		background: #f8f8f8;
+		background: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+		background: linear-gradient(top,#f8f8f8,#f1f1f1);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8f8f8,endColorstr=#f1f1f1,GradientType=1);
+	}
+	
+
+/* Components  */
+
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+	/* General elements */
+	/* General classes */
+	/* Sections */
+	/* Components  */
+}
+
+
+/* Screen 1024px */
+@media (min-width: 1024px) {
+	/* General elements */
+	/* General classes */
+	/* Sections */
+	/* Components  */
+}
+
+
+/* Screen 1336px */
+@media (min-width: 1336px) {
+	/* General elements */
+	/* General classes */
+	/* Sections */
+	/* Components  */
+}
